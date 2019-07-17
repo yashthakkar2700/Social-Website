@@ -1,0 +1,659 @@
+
+/*GENERAL section*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: open-sans,sans-serif;
+    box-sizing: border-box;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li .list1, .list2, .list3, .list4, .list5, .list6{
+    line-height: 2.7;
+    padding-left:10px;
+    text-align: center;
+    width: 80px;
+    height: 50px;
+    margin-left: 20px;
+    padding: 5px 10px;
+}
+.navigation .navbar ul .list1{
+    width: 125px;
+    height: 50px;
+    text-align: center;
+    margin-right: 50px;
+}
+.navigation .navbar ul .list6{
+    padding-top: 10px;
+    margin-left: 1105px; 
+}
+.navigation .navbar ul li:hover{
+    background: #fff;
+    color: black;
+}
+.navigation .navbar ul .list1:hover{
+     background: #ccc;
+    color: black;
+}
+ul li img{
+    width: 23px;
+    height: 50px;
+    border-radius: 100%;
+}
+.pull-right{
+    float: right;
+}
+.pull-left{
+    float: left;
+}
+.margin-right-525{
+    margin-right: 525px;
+}
+.margin-right-510{
+    margin-right: 510px;
+}
+.margin-right-505{
+    margin-right: 505px;
+}
+.back{
+    background: #F2F4F5;
+    width: 100%;
+    height: 1825px;
+}
+.light-gray{
+    color: #ccc;
+}
+.dark-gray{
+    background: #303E45;
+}
+.dark-gray-2{
+    background: #3A4B53;
+}
+.dark-gray-3{
+    background: #435761;
+}
+.dark-gray-4{
+    background: #4D636F;
+}
+.dark-gray-5{
+    background: #57707D;
+}
+.dark-gray-6{
+    background:#607D8B ;
+}
+.dark-gray-7{
+    background: #7D97A5;
+}
+.dark-gray-8{
+    background: #9EB1BB;
+}
+.dark-gray-9{
+    background: #BECBD2;
+}
+.dark-gray-10{
+    background: #DFE5E8;
+}
+.padding-top-20{
+    padding-top: 20px;
+}
+.padding-top-5{
+    padding-top: 5px;
+}
+
+/*HEADER section*/
+.navigation{
+    width: 100%;
+    height: 50px;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    background: #4D636F;
+    color: white;
+    font-size: 18px;
+}
+.navbar .nav-list{
+    display: grid;
+    grid-template-columns: 100px 63px 63px 63px 63px 500px;
+/*    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr auto; */
+}
+.navbar .nav-list li{
+    width: 63px;
+    height: 50px;
+}
+.navbar .nav-list li{
+    text-align: center;
+    line-height: 2.3;
+    cursor: pointer;
+}
+.align-right{
+    margin-left: 1060px;
+}
+.navbar ul li img{
+    width: 23px;
+    height: 23px;
+}
+/*
+.navbar ul .hover-gray .hover-gray: hover{
+    color: black;
+    background: #ccc;
+}
+.navbar .nav-list li: hover .hover-white{
+    color: black;
+    background: white;
+}
+*/
+
+.back{
+    display: grid;
+/*    grid-template-columns: 1fr 5fr 1fr;*/
+    grid-template-areas: 'left-area middle-area right-area';
+    grid-gap: 1px;
+    background: #F5F7F8;
+}
+.left-area{
+    grid-area: left-area;
+}
+.middle-area{
+    grid-area: middle-area;
+}
+.right-area{
+    grid-area: right-area;
+}
+
+/*Left Area*/
+
+/*------Layouting-----*/
+.left-area{
+    width: 345px;
+    height: 1820px;
+    background: #F5F7F8;
+    margin-left: 45px;
+    
+    display: grid;
+/*    grid-template-rows:  3fr 4fr 20fr 160fr;*/
+    grid-template-rows: 315px 115px 135px 115px;
+    grid-gap: 1px;
+}
+.my-profile{
+    background: #fff; 
+    width: 345px;
+    height: 315px; 
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.left-options{
+    background: #fff;
+    width: 345px;
+    height: 115px;
+    margin-top: 40px;
+}
+.interests{
+    background: #fff;
+    width: 345px;
+    height: 135px;
+    margin-top: 60px;
+}
+.hey{
+    background: #fff;
+    width: 345px;
+    height: 115px;
+    margin-top: 80px;
+}
+/*------Layouting Completed-----*/
+
+.back .left-area .my-profile .title{
+    font-family: open-sans, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 20px;
+}
+.color-black{
+    color: black;
+}
+.color-white{
+    color: white;
+}
+.back .left-area .my-profile .profile-pic{
+    width: 105px;
+    height: 105px;
+    border-radius: 100px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+.back .left-area .my-profile .profile-pic img{
+    width: 105px;
+    height: 105px;
+    border-radius: 100px;
+}
+.back .left-area .my-profile hr{
+    width: 90%;
+    margin: 20px 17px;
+    color: #333;
+    opacity: 0.2;
+}
+.back .left-area .my-profile .profile-info{
+    font-size: 15px;
+    color: #607D8B;
+}
+.back .left-area .my-profile .profile-info li{
+/*    text-align: center;*/
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.back .left-area .left-options{
+/*    background: #7D8D96;*/
+    background: #7D97A5;
+    font-family: open-sans, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+} 
+.back .left-area .left-options .options{
+    width: 100%;
+    color: white;
+}
+.back .left-area .left-options .options li{
+    padding: 8px 10px;
+}
+.back .left-area .left-options .options li:hover{
+    background: #CCCCCC;
+    color: black;
+}
+.back .left-area .interests .interests-heading{
+    font-size: 15px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    
+}
+.back .left-area .interests .start-inline{
+    display: inline-block;
+/*    padding-top: 20px;*/
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.back .left-area .interests span{
+    padding: 2px 8px;
+    color: white;
+    font-size: 12px;
+}
+
+.back .left-area .hey{
+    background: #DFE5E8;
+    color: black;
+    font-size: 15px;
+    border : 1px solid #ccc;
+}
+.back .left-area .hey .cross{
+    height: 40px;
+    width: 45px;
+    background: #98BCDB;
+    color: black;
+    text-align: center;
+    margin-left: 257px;
+    margin-top: 0px;
+    padding-top: 15px;
+}
+.shadow-effect{
+/*    box-shadow: 5px 5px 5px -5px #333, -3px -10px 10px -10px #333*/
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.back .left-area .hey .hey-heading{
+    font-weight: bolder;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    text-align: left;  
+}
+.display-inline{
+    display: inline-block;
+}
+.back .left-area .hey .hey-info{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+/*Middle area*/
+
+/*------Layouting-----*/
+.back .middle-area{
+    width: 765px;
+    height: 1790px;
+    margin-left: 10px;
+    margin-top: 20px;
+    
+    display: grid;
+/*    grid-template-rows:  3fr 4fr 20fr 160fr;*/
+    grid-template-rows: 158px 530px 250px 830px; 
+    grid-gap: 20px;
+}
+
+.post-section{
+    background: #fff;
+    width: 765px;
+    height: 158px;
+}
+.john-doe{
+    background: #fff;
+    width: 765px;
+    height: 530px;
+}
+.jane-doe{
+    background: #fff;
+    width: 765px;
+    height: 250px;
+}
+.angie-jane{
+    background: #fff;
+    width: 765px;
+    height: 830px;
+}
+/*------Layouting Completed-----*/
+
+.back .middle-area .post-section .post-title{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Segoe UI,sans-serif;
+    padding: 20px 10px;
+    color: #7D97A5;
+}
+
+.back .middle-area .post-section .input-big{
+    height:40px;
+    width: 735px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: black;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+}
+.back .middle-area .post-section .btn-post{
+   height: 40px;
+    width: 85px;
+    background: #4D636F;
+    color: white;
+    border: none;
+    font-family: Segoe UI,sans-serif;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.back .middle-area .post-section .btn-post li{
+    width: 85px;
+    height: 40px;
+    padding: 7px 15px;
+}
+.back .middle-area .post-section ul li:hover{
+    background: #ccc;
+    color: black;
+}
+
+.back .middle-area .time{
+    font-size: 15px;
+    color: black;
+    opacity: 0.6;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.back .middle-area .info{
+    margin-top: 45px;
+/*    margin-right: 525px;*/
+    font-size: 20px;
+    font-weight: 400;
+    font-family: open-sans,sans-serif;
+}
+
+.back .middle-area .avatar{
+    width: 60px;
+    height: 60px;
+    margin: 25px 20px;
+    border-radius: 100%;
+}
+.back .middle-area .light{
+    width: 730px;
+    margin: 0px 18px;
+    color:black;
+    opacity: 0.3;
+    margin-bottom: 20px;
+}
+.back .middle-area .para{
+    margin: 0px 20px;
+    text-align: justify;
+/*    margin-bottom: 20px;*/
+    font-size: 15px;
+}
+.back .middle-area .john-doe .img-section img{
+     width: 360px;
+    height: 240px;
+    margin-top: 20px;
+}
+.back .middle-area .john-doe .img-section{
+    display: grid;
+    grid-template-columns: 360px 360px;
+    grid-gap: 10px;
+    margin: 0px 15px;
+}
+.back .middle-area .btns{
+    margin-top: 25px;
+    margin-left: 15px;
+    width: 255px;
+    height: 40px;
+}
+.back .middle-area .like{
+    display: inline;
+    padding: 10px 20px;
+    width: 80px;
+    height: 40px;
+    background: #4D636F;
+    color: white;
+}
+.back .middle-area .comments{
+    display: inline;
+    padding: 10px 20px;
+    width: 125px;
+    height: 40px;
+    background: #4D636F;
+    color: white;
+}
+.back .middle-area .btns li:hover{
+    background: #ccc;
+    color: black;
+}
+
+/*Angie Jane*/
+
+.margin-left-20{
+    margin-left: 20px;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+.margin-top-20{
+    margin-top: 20px;
+}
+.nature-img{
+    width: 735px;
+    height: 488px;
+    margin: 0px 15px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*Right Area*/
+
+/*---------Layouting--------*/
+.back .right-area{
+    width: 230px;
+    height: 950px;
+    margin-left: 10px;
+    
+    display: grid;
+/*    grid-template-rows:  3fr 4fr 20fr 160fr;*/
+    grid-template-rows: 326px 250px 90px 130px;
+    grid-gap: 20px
+}
+
+.upcoming-events{
+    background: #fff;
+    width: 230px;
+    height: 326px;
+/*    margin-top: 20px;*/
+    margin-right: 75px;
+}
+
+.right-frnd-req{
+    background: #fff;
+    width: 230px;
+    height: 250px;
+/*    margin-top: 20px;*/
+}
+.ads{
+    background: #fff;
+    width: 230px;
+    height: 90px;
+/*    margin-top: 20px;*/
+}
+.insect{
+    background: #fff;
+    width: 230px;
+    height: 130px;
+    text-align: center;
+    margin-right: 20px;
+}
+/*---------Layouting Completed----------*/
+
+.back .right-area .title{
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+}
+.back .right-area .upcoming-events img{
+    width: 200px;
+    height: 130px;
+    padding-left: 25px;
+    padding-bottom: 20px; 
+}
+.bold{
+    font-weight: bolder;
+}
+.text-center{
+    text-align: center;
+}
+.info-btn{
+    width: 200px;
+    height: 40px;
+    padding: 0px 10px;
+    background: #F2F4F5;
+    color: black;
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.right-area .upcoming-events .info-btn:hover{
+    background: #ccc;
+   
+}
+.right-area .right-frnd-req .img-square{
+    height: 100px;
+    width: 100px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+.right-area .right-frnd-req img{
+    height: 100px;
+    width: 100px;
+}
+.right-area .right-frnd-req .right-wrong{
+    width: 180px;
+    height: 40px;
+    display: inline;
+    margin-left: 10px;
+}
+.right-area .right-frnd-req .right-wrong li{
+    width: 98px;
+    height: 40px;
+    display: inline;
+    padding: 10px 44px;
+}
+.right-area .right-frnd-req .right-wrong li:hover{
+    background: #E0E0E0;
+    color: #666666;
+}
+.right-area .right-frnd-req .right-wrong .right{
+    background: #76C0AB;
+    color: white;
+}
+.right-area .right-frnd-req .right-wrong .wrong{
+    background: #C68C9E;
+    color: white;
+}
+.right-area .ads .ads-info{
+    margin-top: 45px;
+}
+
+.insect span{
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.footer {
+    margin-top: 60px;
+    width: 100%;
+    height: 130px;
+}
+.footer .footer1{
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+    background: #435761;
+    color: white;
+    padding-top: 35px;
+    padding-left: 20px;
+}
+.footer .footer2{
+    width: 100%;
+    height: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background: #303E45;
+    color: white;
+}
+.footer .footer2 a{
+    color: white;
+    width: 30px;
+    height: 20px;
+}
+.underline{
+    text-decoration: underline;
+}
+.size-big{
+    font-size: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
